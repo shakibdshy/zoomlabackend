@@ -24,7 +24,7 @@ app.use(cors());
 
 app.use(express.json());
 
-app.use("/event", postRouter);
+app.use("/api/event", postRouter);
 
 app.use((err, req, res, next) => {
     const errorStatus = err.status || 500;
